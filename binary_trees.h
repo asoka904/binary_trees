@@ -2,6 +2,7 @@
 #define _BINARY_TREES_H_
 
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -66,4 +67,4 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
- /* _BINARY_TREES_H_ */
+#endif /* _BINARY_TREES_H_ */

@@ -54,3 +54,5 @@ dkms.conf
 
 # Extra
 .gitignore
+*-main.c
+binary_tree_print.c
