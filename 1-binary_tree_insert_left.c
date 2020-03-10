@@ -12,19 +12,14 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new = NULL;
 
-	printf("-2");
 	if (parent == NULL)
 		return (NULL);
-	printf("-1");
 	new = binary_tree_node(parent, value);
 	if (new == NULL)
 		return (NULL);
-	printf("0");
 	new->left = parent->left;
-	printf("1");
 	parent->left = new;
-	printf("2");
-	new->left->parent = new;
-	printf("3");
+	if (new->left)
+		new->left->parent = new;
 	return (new);
 }
